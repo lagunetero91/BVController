@@ -48,16 +48,6 @@
         android:id="@+id/button4"
         android:layout_alignTop="@+id/button3" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Select Bluetooth device:"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/button"
-        android:id="@+id/editText" />
-
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,7 +60,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignParentEnd="true"
-        android:headerDividersEnabled="true" />
+        android:layout_toStartOf="@+id/button4"
+        android:layout_marginTop="16dp"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:layout_alignEnd="@+id/button4" />
+
+    <TextView
+        android:text="Bluetooth Device:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
 </RelativeLayout>
