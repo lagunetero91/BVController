@@ -35,6 +35,9 @@ public class blueController {
     }
 
 
+    public void disableBluetooth(){
+        mBluetoothAdapter.disable();
+    }
 
 
         private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
