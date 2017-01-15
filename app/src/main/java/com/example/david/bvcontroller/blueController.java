@@ -1,11 +1,15 @@
 package com.example.david.bvcontroller;
 
+
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.
+
+import android.os.Build;
+
 import java.util.ArrayList;
 
 
@@ -30,11 +34,13 @@ public class blueController {
         // Comrpobamos si el Bluetooth está activado. En caso contrario lo activamos.
         if (!mBluetoothAdapter.isEnabled()) {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            //startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+           // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
 
         }
         return 0;
     }
+
+
 
 
     public void disableBluetooth(){
@@ -71,6 +77,7 @@ public class blueController {
     public void sendRightCommand(){}
 
     public void sendLeftCommand(){}
+
 
 
 }
